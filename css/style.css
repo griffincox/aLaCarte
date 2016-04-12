@@ -73,6 +73,9 @@ input[type="text"] {
   font-family: 'Bitter', serif;
   font-size: 1rem;
 }
+li {
+  text-transform: capitalize;
+}
 textarea:focus, input:focus{
     outline: none;
 }
