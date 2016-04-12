@@ -7,5 +7,11 @@ $('form').submit(function () {
   return false;
 });
 $('ul').on("click", ".item", function() {
+  if ($(this).css("text-decoration") === "none") {
+    console.log("text-decoration is none")
   $(this).css("text-decoration", "line-through")
+    console.log("text-struckthrough")}
+  else $(this).closest('li').remove()
+    console.log("removed clicked on li")
+  return false;
 });
