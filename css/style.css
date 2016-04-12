@@ -58,11 +58,23 @@ font-size: 1rem;
   padding: 1rem 0;
   margin: 0 1rem;
 }
+.shopping-list ul > li:last-of-type {
+  border-radius: 0 0 25px 25px;
+}
 .shopping-list ul > li:first-of-type {
   border-radius: 25px 25px 0 0;
 }
-.shopping-list ul > li:last-of-type {
-  border-radius: 0 0 25px 25px;
+input[type="text"] {
+  width: 30rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Bitter', serif;
+  font-size: 1rem;
+}
+textarea:focus, input:focus{
+    outline: none;
 }
 .print {
   padding: 0.5rem 0;
@@ -77,6 +89,11 @@ font-size: 1rem;
   .instructions p {
     font-size: 1rem;
   }
+  input[type="text"] {
+    width: 25rem;
+    text-align: center;
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .container {
@@ -96,5 +113,9 @@ font-size: 1rem;
   }
   .print {
     font-size: 2rem;
+  }
+  input[type="text"] {
+    width: 15rem;
+    text-align: center;
   }
 }
