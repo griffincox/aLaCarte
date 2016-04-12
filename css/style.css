@@ -54,30 +54,37 @@ font-size: 1rem;
   margin: 0;
 }
 .shopping-list li {
-  border: 1px solid white;
+  background-color: white;
+  color: gray;
   padding: 1rem 0;
   margin: 0 1rem;
 }
 .shopping-list ul > li:last-of-type {
   border-radius: 0 0 25px 25px;
+  border: 1px solid white;
 }
 form {
   border-radius: 25px 25px 0 0;
+  background-color: white;
   border: 1px solid white;
   padding: 1rem 0;
   margin: 0 1rem;
+  color: gray;
+  font-size: 2rem;
 }
 input[type="text"] {
   width: 30rem;
   text-align: center;
   background-color: transparent;
   border: none;
-  color: white;
+  color: gray;
   font-family: 'Bitter', serif;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 li {
   text-transform: capitalize;
+  font-family: 'Bitter', serif;
+  font-size: 2rem;
 }
 textarea:focus, input:focus{
     outline: none;
@@ -118,10 +125,38 @@ textarea:focus, input:focus{
     font-size: 0.2rem;
   }
   .print {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   input[type="text"] {
     width: 15rem;
     text-align: center;
+  }
+  li {
+    font-size: 1rem;
+  }
+}
+@media print {
+  * {
+    color: black;
+  }
+  body {
+    background-color: white;
+  }
+  form {
+    display: none;
+  }
+  .instructions h1 {
+    font-size: 3rem;
+  }
+  .instructions p, h2 {
+    display: none;
+  }
+  .print {
+    display: none;
+  }
+  li {
+    font-size: 1rem;
+    display: inline-block;
+    border: none;
   }
 }

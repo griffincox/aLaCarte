@@ -8,10 +8,8 @@ $('form').submit(function () {
 });
 $('ul').on("click", ".item", function() {
   if ($(this).css("text-decoration") === "none") {
-    console.log("text-decoration is none")
   $(this).css("text-decoration", "line-through")
-    console.log("text-struckthrough")}
-  else $(this).closest('li').remove()
-    console.log("removed clicked on li")
+  }
+  else $(this).closest('li').fadeOut(500);
   return false;
 });
