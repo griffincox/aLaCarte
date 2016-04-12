@@ -1,4 +1,6 @@
 body {
+  background-image:url('http://wallpapercave.com/wp/ZDRooQC.jpg');
+background-repeat: no-repeat;
   background-color: rgb(114,110,102);
   margin: 0;
   padding: 0;
@@ -14,6 +16,11 @@ h3 {
 }
 p {
   margin: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 /*div, section {
   border: 1px solid orange;
@@ -71,6 +78,7 @@ form {
   margin: 0 1rem;
   color: gray;
   font-size: 2rem;
+  border-bottom: 2px solid gray;
 }
 input[type="text"] {
   width: 30rem;
@@ -85,6 +93,8 @@ li {
   text-transform: capitalize;
   font-family: 'Bitter', serif;
   font-size: 2rem;
+  cursor: pointer;
+  border-bottom: 2px solid gray;
 }
 textarea:focus, input:focus{
     outline: none;
