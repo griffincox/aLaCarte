@@ -61,8 +61,11 @@ font-size: 1rem;
 .shopping-list ul > li:last-of-type {
   border-radius: 0 0 25px 25px;
 }
-.shopping-list ul > li:first-of-type {
+form {
   border-radius: 25px 25px 0 0;
+  border: 1px solid white;
+  padding: 1rem 0;
+  margin: 0 1rem;
 }
 input[type="text"] {
   width: 30rem;
