@@ -1,13 +1,52 @@
 body {
-  background-color: gray;
+  background-color: rgb(114,110,102);
+  margin: 0;
+  padding: 0;
 }
-div, section {
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0.5rem;
+}
+/*div, section {
   border: 1px solid orange;
-}
+}*/
 .container {
-  margin: 100px auto;
+  margin: 50px auto;
   width: 40em;
+  color: white;
+  background-color: rgb(76,116,107);
   text-align: center;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 35px 8px white;
+  -moz-box-shadow: 0px 0px 35px 8px white;
+  box-shadow: 0px 0px 35px 8px white;
+}
+.instructions {
+  padding-top: 1rem;
+}
+.instructions h1 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  padding: 0;
+}
+.instructions h2 {
+font-family: 'Bitter', serif;
+font-size: 1.75rem;
+font-weight: 100;
+padding: 0;
+}
+.instructions p {
+font-family: 'Bitter', serif;
+font-size: 1rem;
 }
 .shopping-list ul {
   list-style: none;
@@ -15,6 +54,47 @@ div, section {
   margin: 0;
 }
 .shopping-list li {
-  border: 1px solid red;
+  border: 1px solid white;
   padding: 1rem 0;
+  margin: 0 1rem;
+}
+.shopping-list ul > li:first-of-type {
+  border-radius: 25px 25px 0 0;
+}
+.shopping-list ul > li:last-of-type {
+  border-radius: 0 0 25px 25px;
+}
+.print {
+  padding: 0.5rem 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .container {
+    width: 30em;
+  }
+  .instructions p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 20em;
+    -webkit-box-shadow: 0px 0px 35px 8px white;
+    -moz-box-shadow: 0px 0px 35px 8px white;
+    box-shadow: 0px 0px 35px 8px white;
+  }
+  .instructions h1 {
+    font-size: 4rem;
+  }
+  .instructions h2 {
+    font-size: 1rem;
+  }
+  .instructions p {
+    font-size: 0.2rem;
+  }
+  .print {
+    font-size: 2rem;
+  }
 }
