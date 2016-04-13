@@ -1,7 +1,9 @@
 body {
-  background-image:url('http://wallpapercave.com/wp/ZDRooQC.jpg');
-  background-repeat: no-repeat;
   background-color: rgb(114,110,102);
+  background: url('http://wallpapercave.com/wp/ZDRooQC.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   margin: 0;
   padding: 0;
 }
