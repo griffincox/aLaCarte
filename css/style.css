@@ -66,7 +66,7 @@ font-size: 1rem;
   background-color: white;
   color: gray;
   padding: 1rem 0;
-  margin: 0 1rem;
+  margin: 5px 1rem;
 }
 .shopping-list ul > li:last-of-type {
   border-radius: 0 0 25px 25px;
@@ -80,7 +80,6 @@ form {
   margin: 0 1rem;
   color: gray;
   font-size: 2rem;
-  border-bottom: 2px solid gray;
 }
 input[type="text"] {
   width: 30rem;
@@ -96,10 +95,27 @@ li {
   font-family: 'Bitter', serif;
   font-size: 2rem;
   cursor: pointer;
-  border-bottom: 2px solid gray;
 }
 textarea:focus, input:focus{
     outline: none;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ul.items-list li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ul.items-list li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
 }
 .print {
   padding: 0.5rem 0;

@@ -13,3 +13,6 @@ $('ul').on("click", ".item", function() {
   else $(this).closest('li').toggle("fold")
   return false;
 });
+$(function () {
+  $("ul.items-list").sortable();
+});
