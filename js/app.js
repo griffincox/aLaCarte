@@ -9,7 +9,7 @@ $('form').submit(function () {
 $('ul').on("click", ".item", function() {
   if ($(this).css("text-decoration") === "none") {
   $(this).css("text-decoration", "line-through")
-  }
-  else $(this).closest('li').fadeOut(500);
+}
+  else $(this).closest('li').toggle("fold")
   return false;
 });
