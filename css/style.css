@@ -103,8 +103,8 @@ textarea:focus, input:focus{
 }
 .print {
   padding: 0.5rem 0;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 3rem;
+  font-family: 'Bitter', serif;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 @media only screen and (min-width: 500px) and (max-width: 700px) {
