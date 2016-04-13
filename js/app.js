@@ -10,7 +10,8 @@ $('ul').on("click", ".item", function() {
   if ($(this).css("text-decoration") === "none") {
   $(this).css("text-decoration", "line-through")
 }
-  else $(this).closest('li').toggle("fold")
+  else $(this).closest('li').toggle("fold").remove()
+  $(".items-list li:last-of-type").css({"border-radius": "0 0 25px 25px", "border": "1px solid white"})
   return false;
 });
 $(function () {
