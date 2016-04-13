@@ -1,6 +1,6 @@
 body {
   background-image:url('http://wallpapercave.com/wp/ZDRooQC.jpg');
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-color: rgb(114,110,102);
   margin: 0;
   padding: 0;
@@ -138,7 +138,7 @@ textarea:focus, input:focus{
     font-size: 1.5rem;
   }
   li {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   input[type="text"] {
     width: 12rem;
